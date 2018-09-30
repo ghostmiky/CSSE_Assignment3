@@ -1,0 +1,8 @@
+com\sql\csse\SEntity\MaterialRequest.class
+com\sql\csse\SController\MaterialRequestController.class
+com\sql\csse\SRepository\MaterialRequestRepo.class
+com\sql\csse\SpringBootsql\SpringBootSqlApplication.class
+com\sql\csse\SRepository\SRepo.class
+com\sql\csse\SEntity\Item.class
+com\sql\csse\SController\SupplierController.class
+com\sql\csse\SEntity\Supplier.class
