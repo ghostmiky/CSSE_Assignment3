@@ -49,4 +49,15 @@ public class SupplierController {
 
             return itms;
     }
+
+    @RequestMapping(method = RequestMethod.GET , value = "/getSupplier/{id}" ,produces = MediaType.APPLICATION_JSON_VALUE)
+    public Supplier getSupplier(@PathVariable("id") int id){
+        supps = sRepo.findAll();
+
+        for(Supplier s : supps){
+            if(s.getSupplierID() == id)
+                supplier = s;
+        }
+        return supplier;
+    }
 }
