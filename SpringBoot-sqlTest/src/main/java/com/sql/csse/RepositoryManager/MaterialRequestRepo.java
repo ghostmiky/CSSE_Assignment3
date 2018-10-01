@@ -10,6 +10,6 @@ import java.util.ArrayList;
 public interface MaterialRequestRepo extends JpaRepository<MaterialRequest, Integer>{
 
 
-    @Query(value = "SELECT m FROM material__requests m WHERE lower(m.status) = lower('pending') ",nativeQuery = true)
-    public ArrayList<Order> findpendingRequests( );
+    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'pending' ",nativeQuery = true)
+    public ArrayList<MaterialRequest> findpendingRequests( );
 }

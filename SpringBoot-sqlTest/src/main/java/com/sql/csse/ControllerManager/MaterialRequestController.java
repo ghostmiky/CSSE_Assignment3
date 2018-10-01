@@ -2,6 +2,7 @@ package com.sql.csse.ControllerManager;
 
 
 import com.sql.csse.EntityManager.MaterialRequest;
+import com.sql.csse.EntityManager.UsedMaterials;
 import com.sql.csse.RepositoryManager.MaterialRequestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -29,5 +30,12 @@ public class MaterialRequestController {
     @RequestMapping(method = RequestMethod.GET , value = "/getall" , produces = MediaType.APPLICATION_JSON_VALUE)
     public List<MaterialRequest> getAll(){
         return materialRequestRepo.findAll();
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET , value = "/getPending" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<MaterialRequest> findPending() {
+
+        return materialRequestRepo.findpendingRequests();
     }
 }
