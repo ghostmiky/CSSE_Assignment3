@@ -1,14 +1,19 @@
 package com.sql.csse.EntityManager;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "Accounts")
 public class Account {
 
+    @Id
+    @Column(name = "Account_No")
     private int accountNo;
 
+    @Column(name = "Bank")
     private String Bank;
 
     public Account(int accountNo, String bank) {
