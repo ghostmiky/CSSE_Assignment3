@@ -45,8 +45,16 @@ public class MaterialRequestController {
     public ArrayList<MaterialRequest> getPendingRequests(){
 
         return materialRequestRepo.findpendingRequests();
+    }
 
 
+    @RequestMapping(method=RequestMethod.PUT, value="/updateRequests/{id}")
+    public List<MaterialRequest> updateRequests(@PathVariable("id") int rid, @RequestBody String jsonString){
+        Gson obj = new Gson();
+
+        materialRequest = obj.fromJson(jsonString, MaterialRequest.class);
+        materialRequestRepo.updateRequest(rid,materialRequest.getMID(),materialRequest.getMaterial_name(),materialRequest.getMaterial_quantity(),materialRequest.getRequested_date(),materialRequest.getOrder_date(),materialRequest.getStatus());
+        return materialRequestRepo.findAll();
     }
 
 //    @RequestMapping(method = RequestMethod.GET , value = "/getPending/{status}" ,produces = MediaType.APPLICATION_JSON_VALUE)
