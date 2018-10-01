@@ -24,6 +24,6 @@ public interface OrderRepo extends JpaRepository<Order,Integer> {
     *
     * */
 
-    @Query("SELECT orders FROM Order orders WHERE LOWER(orders.order_status) = 'delivered' ")
+    @Query(value = "SELECT o FROM Order o WHERE lower(o.order_status) = lower('delivered') ",nativeQuery = true)
     public ArrayList<Order> findDelivered( );
 }
