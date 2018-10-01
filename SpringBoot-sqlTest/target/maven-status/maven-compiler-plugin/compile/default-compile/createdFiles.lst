@@ -1,4 +1,5 @@
 com\sql\csse\RepositoryManager\SRepo.class
+com\sql\csse\EntityManager\UsedMaterials.class
 com\sql\csse\RepositoryManager\OrderRepo.class
 com\sql\csse\ControllerManager\SupplierController.class
 com\sql\csse\RepositoryManager\MaterialRequestRepo.class
@@ -6,8 +7,10 @@ com\sql\csse\EntityManager\MaterialRequest.class
 com\sql\csse\SpringBootsql\SpringBootSqlApplication.class
 com\sql\csse\ControllerManager\MaterialRequestController.class
 com\sql\csse\EntityManager\Supplier.class
+com\sql\csse\ControllerManager\UsedMaterialController.class
 com\sql\csse\EntityManager\Order.class
 com\sql\csse\ServiceManager\SupplierService.class
 com\sql\csse\ControllerManager\OrderController.class
 com\sql\csse\EntityManager\Item.class
+com\sql\csse\RepositoryManager\UsedMaterialRepo.class
 com\sql\csse\EntityManager\Item_Quantity.class
