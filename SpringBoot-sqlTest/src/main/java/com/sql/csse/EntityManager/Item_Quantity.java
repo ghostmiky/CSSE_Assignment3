@@ -17,24 +17,26 @@ import javax.persistence.Id;
 public class Item_Quantity {
 
     @Id
-    private Item item;
+    private int IQ_id;
+
+    private String item_name;
 
     private float quantity;
 
-    public Item_Quantity(Item item, float quantity) {
-        this.item = item;
+    public Item_Quantity(String item, float quantity) {
+        this.item_name = item;
         this.quantity = quantity;
     }
 
     public Item_Quantity() {
     }
 
-    public Item getItem() {
-        return item;
+    public String getItem() {
+        return item_name;
     }
 
-    public void setItem(Item item) {
-        this.item = item;
+    public void setItem(String item) {
+        this.item_name = item;
     }
 
     public float getQuantity() {
