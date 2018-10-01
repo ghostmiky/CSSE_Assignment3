@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c9a0ef-f056-4317-a9a1-9b7ca1627d73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/UsedMaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/UsedMaterialController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar" afterDir="false" />
@@ -25,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/2018-10-01T11-02-24_890.dumpstream" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sql.csse.SpringBootsql.SpringBootSqlApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sql.csse.SpringBootsql.SpringBootSqlApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sql.csse.SpringBootsql.SpringBootSqlApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.sql.csse.SpringBootsql.SpringBootSqlApplicationTests.txt" afterDir="false" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,12 +71,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="java" value="306" />
+          <entry key="properties" value="45" />
+=======
           <entry key="java" value="135" />
           <entry key="properties" value="42" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
+          <entry key="JAVA" value="306" />
+          <entry key="Properties" value="45" />
+=======
           <entry key="JAVA" value="135" />
           <entry key="Properties" value="42" />
         </counts>
@@ -106,6 +117,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="82" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
         </counts>
       </usages-collector>
     </session>
@@ -122,19 +134,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/SpringBootsql/SpringBootSqlApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="70" />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/UsedMaterialController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
             </state>
           </provider>
         </entry>
@@ -180,11 +210,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="238">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+=======
             <state relative-caret-position="204">
               <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
             </state>
           </provider>
         </entry>
@@ -226,10 +261,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/UsedMaterialRepo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/EntityManager/MaterialRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/UsedMaterialController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
         <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java" />
       </list>
     </option>
   </component>
@@ -496,7 +535,11 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538382209190" />
+=======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538385173901" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -606,19 +649,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538371798751</updated>
+<<<<<<< HEAD
+      <workItem from="1538371829532" duration="7366000" />
+=======
       <workItem from="1538371829532" duration="2318000" />
       <workItem from="1538383971943" duration="1172000" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="7366000" />
+=======
     <option name="totallyTimeSpent" value="5110000" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -628,7 +689,11 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32925472" />
+=======
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25957447" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -688,6 +753,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/EntityManager/MaterialRequest.java">
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/EntityManager/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -696,6 +764,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/OrderController.java">
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
@@ -762,6 +831,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/MaterialRequestRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -780,9 +855,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+>>>>>>> e85d61a71ff9d1a3e39933d515b6e76eeacfe8ae
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/MaterialRequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="70" />
         </state>
       </provider>
     </entry>
