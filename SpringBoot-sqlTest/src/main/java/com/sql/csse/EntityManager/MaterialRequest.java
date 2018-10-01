@@ -29,13 +29,18 @@ public class MaterialRequest {
     @Column(name = "order_date")
     private String order_date;
 
+    @Column(name = "satatus")
+    private String status;
 
-    public MaterialRequest(int MID, String material_name, double material_quantity, String requested_date, String order_date) {
+
+    public MaterialRequest(int MID, String material_name, double material_quantity, String requested_date, String order_date, String status) {
         this.MID = MID;
         this.material_name = material_name;
         this.material_quantity = material_quantity;
         this.requested_date = requested_date;
         this.order_date = order_date;
+        this.status = status;
+
     }
 
     public MaterialRequest() {
@@ -88,4 +93,8 @@ public class MaterialRequest {
     public void setOrder_date(String order_date) {
         this.order_date = order_date;
     }
+
+    public String getStatus() { return status; }
+
+    public void setStatus(String status) { this.status = status; }
 }
