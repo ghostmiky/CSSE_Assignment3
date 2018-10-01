@@ -1,6 +1,7 @@
 package com.sql.csse.ControllerManager;
 
 
+import com.google.gson.Gson;
 import com.sql.csse.EntityManager.Item;
 import com.sql.csse.EntityManager.Supplier;
 import com.sql.csse.RepositoryManager.SRepo;
@@ -22,8 +23,12 @@ public class SupplierController {
     List<Item> itms;
 
     @RequestMapping(method = RequestMethod.POST , value = "/save" , consumes = MediaType.APPLICATION_JSON_VALUE)
-    public List<Supplier> SaveSupplier(@RequestBody  Supplier supp){
-        sRepo.save(supp);
+    public List<Supplier> SaveSupplier(@RequestBody  String supp){
+
+        Gson gson = new Gson();
+
+        supplier =  gson.fromJson(supp,Supplier.class);
+        sRepo.save(supplier);
       //  System.out.println(supp.getAddress());
         return sRepo.findAll();
     }
