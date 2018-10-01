@@ -23,7 +23,7 @@ public class MaterialRequestController {
     MaterialRequest materialRequest;
     List<MaterialRequest> materialList;
 
-    @RequestMapping(method = RequestMethod.POST , value = "/save" , consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST , value = "/save" , produces = MediaType.APPLICATION_JSON_VALUE)
     public List<MaterialRequest> MaterialRequests(@RequestBody  String mr){
 
         Gson gson = new Gson();
