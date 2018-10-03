@@ -1,9 +1,8 @@
 package com.sql.csse.ServiceManager;
 
 
-import com.sql.csse.EntityManager.Item;
 import com.sql.csse.EntityManager.Supplier;
-import com.sql.csse.RepositoryManager.SRepo;
+import com.sql.csse.RepositoryManager.SupplierRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.transaction.Transactional;
@@ -14,12 +13,12 @@ import java.util.List;
 public class SupplierService {
 
     @Autowired
-    SRepo sRepo;
+    SupplierRepo supplierRepo;
 
     @Transactional
     public List<Supplier> getAllSuppliers(){
         List<Supplier> suppliers = new ArrayList<>();
-        Iterable<Supplier> supplierIterable = sRepo.findAll();
+        Iterable<Supplier> supplierIterable = supplierRepo.findAll();
 
         Iterator<Supplier> supplierIterator = supplierIterable.iterator();
 
@@ -35,7 +34,7 @@ public class SupplierService {
     public List<Item> getSupplierItems(int sid){
 
         List<Item> items = new ArrayList<>();
-        List<Supplier> suppliers = sRepo.findAll();
+        List<Supplier> suppliers = supplierRepo.findAll();
 
 
 

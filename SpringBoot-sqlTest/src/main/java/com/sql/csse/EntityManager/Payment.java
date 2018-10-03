@@ -1,3 +1,7 @@
+/*This class is the representation of Payment class in the Class diagram
+*  Author: It16153028
+* */
+
 package com.sql.csse.EntityManager;
 
 import javax.persistence.*;

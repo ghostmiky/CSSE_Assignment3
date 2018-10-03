@@ -1,6 +1,12 @@
+/*
+* This Controller class handles the requests regarding the Orders
+* Author:IT16153028
+* */
+
+
 package com.sql.csse.ControllerManager;
 
-import com.sql.csse.EntityManager.Item_Quantity;
+
 import com.sql.csse.EntityManager.Order;
 import com.sql.csse.RepositoryManager.OrderRepo;
 import org.springframework.beans.factory.annotation.Autowired;

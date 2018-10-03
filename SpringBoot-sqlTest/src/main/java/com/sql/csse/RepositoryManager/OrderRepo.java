@@ -1,7 +1,9 @@
 /*
 * This Interface manages the table creation in the database.
 * And  built in methods in this interface can be used to manage the basic CRUD operations for a table
+*   A custom query has been added to find the delivered order
 *
+*   Author : IT16153028
 * */
 
 

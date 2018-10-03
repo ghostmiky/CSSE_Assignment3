@@ -1,7 +1,7 @@
 package com.sql.csse.SpringBootsql;
 
 import com.sql.csse.ControllerManager.SupplierController;
-import com.sql.csse.RepositoryManager.SRepo;
+import com.sql.csse.RepositoryManager.SupplierRepo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -26,13 +26,13 @@ public class SpringBootSqlApplicationTests {
 	private MockMvc mvc;
 
 	@MockBean
-	SRepo sRepo;
+    SupplierRepo supplierRepo;
 
 
 	@Test
 	public void contextLoads() throws Exception {
 
-		Mockito.when(sRepo.findAll()).thenReturn(
+		Mockito.when(supplierRepo.findAll()).thenReturn(
 				Collections.emptyList()
 		);
 
@@ -43,7 +43,7 @@ public class SpringBootSqlApplicationTests {
 				).andReturn();
 		System.out.println(mvcResult.getResponse());
 
-		Mockito.verify(sRepo).findAll();
+		Mockito.verify(supplierRepo).findAll();
 
 	}
 

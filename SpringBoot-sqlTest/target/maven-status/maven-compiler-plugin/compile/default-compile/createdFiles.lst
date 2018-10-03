@@ -1,4 +1,3 @@
-com\sql\csse\RepositoryManager\SRepo.class
 com\sql\csse\EntityManager\UsedMaterials.class
 com\sql\csse\RepositoryManager\OrderRepo.class
 com\sql\csse\ControllerManager\PaymentController.class
@@ -13,6 +12,7 @@ com\sql\csse\EntityManager\Supplier.class
 com\sql\csse\ControllerManager\UsedMaterialController.class
 com\sql\csse\EntityManager\Order.class
 com\sql\csse\RepositoryManager\PaymentRepo.class
+com\sql\csse\RepositoryManager\SupplierRepo.class
 com\sql\csse\ServiceManager\SupplierService.class
 com\sql\csse\ControllerManager\ConstructorController.class
 com\sql\csse\ControllerManager\OrderController.class
