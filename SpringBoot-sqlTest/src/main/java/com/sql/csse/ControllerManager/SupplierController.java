@@ -7,8 +7,11 @@ import com.sql.csse.EntityManager.Supplier;
 import com.sql.csse.RepositoryManager.SRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @RestController
@@ -21,6 +24,22 @@ public class SupplierController {
     Supplier supplier;
     List<Supplier> supps;
     List<Item> itms;
+
+
+//    @RequestMapping(method = RequestMethod.GET , value = "/getall" , produces = MediaType.APPLICATION_JSON_VALUE)
+//    public List<Supplier> getAll(Model model){
+//        model.addAttribute("supplier", new Supplier());
+//
+//        List<Supplier> sup_details=new ArrayList<Supplier>();
+//        Iterable<Supplier> sup_detailsIterable= sRepo.findAll();
+//        Iterator<Supplier> sup_detailsIterator=sup_detailsIterable.iterator();
+//        while(sup_detailsIterator.hasNext())
+//        {
+//            sup_details.add(sup_detailsIterator.next());
+//        }
+//        model.addAttribute("listRequest", sup_details);
+//        return sRepo.findAll();
+//    }
 
     @RequestMapping(method = RequestMethod.POST , value = "/save" , consumes = MediaType.APPLICATION_JSON_VALUE)
     public List<Supplier> SaveSupplier(@RequestBody  String supp){
@@ -59,5 +78,13 @@ public class SupplierController {
                 supplier = s;
         }
         return supplier;
+    }
+
+
+
+    @RequestMapping(method = RequestMethod.PUT , value = "/updateSupplier" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public void updateSupplier(Supplier supplier) {
+        sRepo.save(supplier);
+
     }
 }

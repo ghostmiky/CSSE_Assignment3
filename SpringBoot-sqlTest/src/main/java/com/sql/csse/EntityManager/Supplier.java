@@ -43,16 +43,23 @@ public class Supplier {
     @Column(name = "Availability")
     private boolean availability;
 
-    public Supplier(String supplierName, Long bankAccNumber, String address, String email, String phoneNumber, List<Item> items, boolean availability) {
+    @Column(name = "report")
+    private String report;
 
 
-        this.SupplierName = supplierName;
-        this.BankAccNumber = bankAccNumber;
-        this.Address = address;
-        this.Email = email;
+    @Column(name = "rate")
+    private float rate;
+
+    public Supplier(String supplierName, Long bankAccNumber, String address, String email, String phoneNumber, List<Item> items, boolean availability, String report, float rate) {
+        SupplierName = supplierName;
+        BankAccNumber = bankAccNumber;
+        Address = address;
+        Email = email;
         this.phoneNumber = phoneNumber;
         this.items = items;
         this.availability = availability;
+        this.report = report;
+        this.rate = rate;
     }
 
     public Supplier() {
@@ -122,10 +129,19 @@ public class Supplier {
         this.availability = availability;
     }
 
+    public String getReport() {
+        return report;
+    }
 
+    public void setReport(String report) {
+        this.report = report;
+    }
 
+    public float getRate() {
+        return rate;
+    }
 
-
-
-
+    public void setRate(float rate) {
+        this.rate = rate;
+    }
 }
