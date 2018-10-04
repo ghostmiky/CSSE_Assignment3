@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c1c9a0ef-f056-4317-a9a1-9b7ca1627d73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sql/csse/ControllerManager/SupplierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/SupplierRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/SupplierRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringBoot-sqlTest-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sql/csse/ControllerManager/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sql/csse/ControllerManager/SupplierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,13 +94,13 @@
           <entry key="dummy" value="8" />
           <entry key="java" value="3086" />
           <entry key="properties" value="44" />
-          <entry key="txt" value="391" />
+          <entry key="txt" value="453" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3086" />
-          <entry key="PLAIN_TEXT" value="399" />
+          <entry key="PLAIN_TEXT" value="461" />
           <entry key="Properties" value="44" />
         </counts>
       </usages-collector>
@@ -116,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/SpringBootsql/SpringBootSqlApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -170,7 +171,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/SupplierRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -507,7 +508,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538632706541" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538632919967" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../frontEndCsse" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -682,7 +683,7 @@
       <workItem from="1538454998496" duration="1375000" />
       <workItem from="1538469581970" duration="1045000" />
       <workItem from="1538538728746" duration="13152000" />
-      <workItem from="1538627348036" duration="4247000" />
+      <workItem from="1538627348036" duration="4504000" />
     </task>
     <task id="LOCAL-00001" summary="changes in the material_request class.">
       <created>1538385229428</created>
@@ -761,7 +762,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538568098999</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Site functionality. Author: IT16136984">
+      <created>1538632838771</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538632838771</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -782,7 +790,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32923000" />
+    <option name="totallyTimeSpent" value="33180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -795,9 +803,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2342282" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2342282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -807,7 +814,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24822696" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29219857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -847,7 +854,8 @@
     <MESSAGE value="Added new attributes to the Supplier class" />
     <MESSAGE value="made some simple changes to the code" />
     <MESSAGE value="TEST CASES" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST CASES" />
+    <MESSAGE value="Added Site functionality. Author: IT16136984" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Site functionality. Author: IT16136984" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/EntityManager/UsedMaterials.java">
@@ -1034,13 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/SpringBootsql/SpringBootSqlApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/RepositoryManager/SiteRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1055,6 +1056,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sql/csse/SpringBootsql/SpringBootSqlApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
