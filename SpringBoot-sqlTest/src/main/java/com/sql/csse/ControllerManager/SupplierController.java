@@ -8,6 +8,7 @@ package com.sql.csse.ControllerManager;
 
 import com.google.gson.Gson;
 import com.sql.csse.EntityManager.Item;
+import com.sql.csse.EntityManager.Site;
 import com.sql.csse.EntityManager.Supplier;
 import com.sql.csse.RepositoryManager.SupplierRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,11 +49,15 @@ public class SupplierController {
     @RequestMapping(method = RequestMethod.POST , value = "/save" , consumes = MediaType.APPLICATION_JSON_VALUE)
     public List<Supplier> SaveSupplier(@RequestBody  String supp){
 
-        Gson gson = new Gson();
+        try{
+            Gson gson = new Gson();
 
-        supplier =  gson.fromJson(supp,Supplier.class);
-        supplierRepo.save(supplier);
-      //  System.out.println(supp.getAddress());
+            supplier =  gson.fromJson(supp,Supplier.class);
+            supplierRepo.save(supplier);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         return supplierRepo.findAll();
     }
 
@@ -61,34 +66,64 @@ public class SupplierController {
         return supplierRepo.findAll();
     }
 
+    //This method will return the items that the Supplier has.
     @RequestMapping(method = RequestMethod.GET , value = "/getItems/{id}" ,produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Item> getItems(@PathVariable("id") int sid){
+
+        try {
             supps = supplierRepo.findAll();
             for(Supplier s : supps){
                 if(s.getSupplierID() == sid){
                     itms = s.getItems();
                 }
             }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
             return itms;
     }
 
     @RequestMapping(method = RequestMethod.GET , value = "/getSupplier/{id}" ,produces = MediaType.APPLICATION_JSON_VALUE)
     public Supplier getSupplier(@PathVariable("id") int id){
-        supps = supplierRepo.findAll();
 
-        for(Supplier s : supps){
-            if(s.getSupplierID() == id)
-                supplier = s;
+        try {
+            supps = supplierRepo.findAll();
+
+            for(Supplier s : supps){
+                if(s.getSupplierID() == id)
+                    supplier = s;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
         return supplier;
     }
 
 
 
-    @RequestMapping(method = RequestMethod.PUT , value = "/updateSupplier" , produces = MediaType.APPLICATION_JSON_VALUE)
-    public void updateSupplier(Supplier supplier) {
-        supplierRepo.save(supplier);
+    @RequestMapping(method=RequestMethod.PUT, value="/updateSite/{id}")
+    public List<Supplier> updateSupplier(@PathVariable("id") int supplierID, @RequestBody String jsonString){
+        try {
+            Gson obj = new Gson();
 
+            supplier = obj.fromJson(jsonString, Supplier.class);
+
+
+            supplierRepo.updateSupplier(supplierID, supplier.getAddress(), supplier.getSupplierName(), supplier.getBankAccNumber(),supplier.getEmail(), supplier.getPhoneNumber(),supplier.isAvailability(), supplier.getReport(),supplier.getRate());
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return supplierRepo.findAll();
     }
+
+    @RequestMapping(method=RequestMethod.DELETE, value = "/deleteSite/{id}")
+    public List<Supplier> deleteSupplier(@PathVariable("id") int supplierID){
+        supplierRepo.deleteById(supplierID);
+        return supplierRepo.findAll();
+    }
+
+
 }
