@@ -72,4 +72,9 @@ public class MaterialRequestController {
 //    }
 
 
+    @RequestMapping(method = RequestMethod.GET , value = "/getallApproved" , produces = MediaType.APPLICATION_JSON_VALUE)
+    public ArrayList<MaterialRequest> getApprovedRequests(){
+
+        return materialRequestRepo.findApprovedRequests();
+    }
 }
