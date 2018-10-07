@@ -21,8 +21,39 @@ public interface MaterialRequestRepo extends JpaRepository<MaterialRequest, Inte
     * This query is used for select the
     * pending request details
     * */
-    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'pending' ",nativeQuery = true)
-     ArrayList<MaterialRequest> findpendingRequests( );
+    @Query(value = "SELECT * FROM material_requests m WHERE m.status = 'Pending' ",nativeQuery = true)
+     ArrayList<MaterialRequest> findpendingRequests();
+
+
+    /*
+     * This query is used for select the
+     * mgr accepted request details
+     * */
+    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'Accepted by Site Manager' ",nativeQuery = true)
+    ArrayList<MaterialRequest> findMgracceptedRequests();
+
+    /*
+     * This query is used for select the
+     * proc accepted request details
+     * */
+    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'Accepted by Site Proc Staff' ",nativeQuery = true)
+    ArrayList<MaterialRequest> findProcacceptedRequests();
+
+
+    /*
+     * This query is used for select the
+     * mgr rejected request details
+     * */
+    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'Rejected by Site Manager' ",nativeQuery = true)
+    ArrayList<MaterialRequest> findMgrrejectedRequests();
+
+    /*
+     * This query is used for select the
+     * proc rejected request details
+     * */
+    @Query(value = "SELECT * FROM material_requests m WHERE m.satatus = 'Rejected by Site Proc Staff' ",nativeQuery = true)
+    ArrayList<MaterialRequest> findProcrejectedRequests();
+
 
     /*
     * This query is used for
@@ -31,14 +62,40 @@ public interface MaterialRequestRepo extends JpaRepository<MaterialRequest, Inte
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE materila_requests m SET m.mid = :mid ,m.material_name=:material_name, m.material_quantity=:material_quantity, m.requested_date=:requested_date, m.order_date=:order_date, m.status=:status WHERE m.rid = :rid", nativeQuery = true)
-    void updateRequest(@Param("rid") int rid, @Param("mid") int mid, @Param("material_name") String material_name, @Param("material_quantity") double material_quantity, @Param("requested_date") String requested_date, @Param("order_date") String order_date, @Param("status") String status);
+    @Query(value = "UPDATE material_requests m SET m.mid = :mid ,m.material_quantity=:material_quantity, m.requested_date=:requested_date, m.order_date=:order_date, m.status=:status WHERE m.rid = :rid", nativeQuery = true)
+    void updateRequest(@Param("rid") int rid, @Param("mid") int mid, @Param("material_quantity") double material_quantity, @Param("requested_date") String requested_date, @Param("order_date") String order_date, @Param("status") String status);
 
-     /*
-     * This query is used for select the
-     * approved request details
+
+    /*
+     * This query is used for
+     * update status SITEMANAGER
      * */
-    @Query(value = "SELECT * FROM material_requests m WHERE m.status = 'approved' ",nativeQuery = true)
-    ArrayList<MaterialRequest> findApprovedRequests( );
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE material_requests m SET m.status='Accepted by Site Manager' WHERE m.rid = :rid", nativeQuery = true)
+    void acceptRequestStatusBYsitemgr(@Param("rid") int rid);
+
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE material_requests m SET m.status='Rejected by Site Manager' WHERE m.rid = :rid", nativeQuery = true)
+    void rejectRequestStatusBYsitemgr(@Param("rid") int rid);
+
+
+    /*
+     * This query is used for
+     * update status PROCUMENTSTAFF
+     * */
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE material_requests m SET m.status='Accepted by Site Proc Staff' WHERE m.rid = :rid", nativeQuery = true)
+    void acceptRequestStatusBYproc(@Param("rid") int rid);
+
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE material_requests m SET m.status='Rejected by Site Proc Staff' WHERE m.rid = :rid", nativeQuery = true)
+    void rejectRequestStatusBYproc(@Param("rid") int rid);
+
+
+
 
 }

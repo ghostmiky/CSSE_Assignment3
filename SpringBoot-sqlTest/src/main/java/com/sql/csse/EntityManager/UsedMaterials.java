@@ -1,9 +1,5 @@
 package com.sql.csse.EntityManager;
 
-/*
- * Author S.S. Abeydeera
- * IT16119468
- */
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

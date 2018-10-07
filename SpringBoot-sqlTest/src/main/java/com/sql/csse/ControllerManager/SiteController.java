@@ -20,7 +20,6 @@ public class SiteController {
 
     Site site;
 
-    List<Site> SiteList;
 
     @RequestMapping(method = RequestMethod.GET, value = "/getAllSites", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Site> getAll() {
@@ -62,5 +61,18 @@ public class SiteController {
         repo.updateSite(siteID, site.getAddress(), site.getSiteName(), site.getCurrentCapacity(),site.getStorageCapacity(), site.getManagerId());
         return repo.findAll();
     }
+
+    @RequestMapping(method=RequestMethod.PUT, value="/updateSiteManager/{id}")
+    public List<Site> addSiteManager(@PathVariable("id") int siteID, @RequestBody String jsonString){
+        Gson obj = new Gson();
+
+        site = obj.fromJson(jsonString, Site.class);
+
+        repo.addManager(siteID,site.getManagerId());
+        System.out.println(site.getManagerId());
+        return repo.findAll();
+    }
+
+
 
 }

@@ -1,7 +1,3 @@
-/*This Entity class represents the Class Accounts in the class diagram
-* Author:It16153028
-* */
-
 package com.sql.csse.EntityManager;
 
 import javax.persistence.Column;

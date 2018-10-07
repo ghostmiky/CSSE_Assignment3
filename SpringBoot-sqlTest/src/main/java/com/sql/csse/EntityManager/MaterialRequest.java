@@ -5,6 +5,8 @@ package com.sql.csse.EntityManager;
  * IT16119468
  */
 
+import org.springframework.beans.factory.annotation.Value;
+
 import javax.persistence.*;
 
 @Entity
@@ -21,8 +23,8 @@ public class MaterialRequest {
     @Column(name = "MID")
     private int MID;
 
-    @Column(name = "material_name")
-    private String material_name;
+//    @Column(name = "material_name")
+//    private String material_name;
 
     @Column(name = "material_quantity")
     private double material_quantity;
@@ -33,17 +35,17 @@ public class MaterialRequest {
     @Column(name = "order_date")
     private String order_date;
 
-    @Column(name = "satatus")
-    private String status;
+    @Column(name = "status")
+    private String status = "Pending";
 
 
-    public MaterialRequest(int MID, String material_name, double material_quantity, String requested_date, String order_date, String status) {
+    public MaterialRequest(int MID, double material_quantity, String requested_date, String order_date) {
         this.MID = MID;
-        this.material_name = material_name;
+       // this.material_name = material_name;
         this.material_quantity = material_quantity;
         this.requested_date = requested_date;
         this.order_date = order_date;
-        this.status = status;
+        //this.status = status;
 
     }
 
@@ -66,13 +68,13 @@ public class MaterialRequest {
         this.MID = MID;
     }
 
-    public String getMaterial_name() {
-        return material_name;
-    }
+//    public String getMaterial_name() {
+//        return material_name;
+//    }
 
-    public void setMaterial_name(String material_name) {
-        this.material_name = material_name;
-    }
+//    public void setMaterial_name(String material_name) {
+//        this.material_name = material_name;
+//    }
 
     public double getMaterial_quantity() {
         return material_quantity;

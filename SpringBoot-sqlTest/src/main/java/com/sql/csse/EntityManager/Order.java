@@ -4,7 +4,10 @@
             Author : It16153028
 * */
 
-
+/*
+* This Entity manages the Purchase Order class
+* Author : It16153028
+* */
 
 
 package com.sql.csse.EntityManager;

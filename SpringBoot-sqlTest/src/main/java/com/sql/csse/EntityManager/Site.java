@@ -3,11 +3,15 @@ package com.sql.csse.EntityManager;
 
 import javax.persistence.*;
 
+//defines that a class can be mapped to a table
 @Entity
+
+//Name of the table
 @Table(name="Sites")
 public class Site {
 
     @Id
+    //ID is auto generated
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = "SiteID")
     private int SiteID;
@@ -95,6 +99,7 @@ public class Site {
     }
 
     public String getManagerId() {
+
         return ManagerId;
     }
 

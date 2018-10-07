@@ -7,6 +7,7 @@ package com.sql.csse.ControllerManager;
 
 import com.google.gson.Gson;
 import com.sql.csse.EntityManager.MaterialRequest;
+import com.sql.csse.EntityManager.Site;
 import com.sql.csse.RepositoryManager.MaterialRequestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -31,6 +32,7 @@ public class MaterialRequestController {
 
         Gson gson = new Gson();
         materialRequest =  gson.fromJson(mr, MaterialRequest.class);
+
         materialRequestRepo.save(materialRequest);
         return materialRequestRepo.findAll();
     }
@@ -50,31 +52,46 @@ public class MaterialRequestController {
         return materialRequestRepo.findpendingRequests();
     }
 
-
-    @RequestMapping(method=RequestMethod.PUT, value="/updateRequests/{id}")
-    public List<MaterialRequest> updateRequests(@PathVariable("id") int rid, @RequestBody String jsonString){
-        Gson obj = new Gson();
-
-        materialRequest = obj.fromJson(jsonString, MaterialRequest.class);
-        materialRequestRepo.updateRequest(rid,materialRequest.getMID(),materialRequest.getMaterial_name(),materialRequest.getMaterial_quantity(),materialRequest.getRequested_date(),materialRequest.getOrder_date(),materialRequest.getStatus());
+    //Delete Request
+    @RequestMapping(method=RequestMethod.DELETE, value = "/deleteRequest/{id}")
+    public List<MaterialRequest> deleteRequest(@PathVariable("id") int rid){
+        materialRequestRepo.deleteById(rid);
         return materialRequestRepo.findAll();
     }
 
-//    @RequestMapping(method = RequestMethod.GET , value = "/getPending/{status}" ,produces = MediaType.APPLICATION_JSON_VALUE)
-//    public MaterialRequest getPendingRequests(@PathVariable("status") String st){
-//        materialList = materialRequestRepo.findAll();
-//
-//        for(MaterialRequest mr : materialList){
-//            if(mr.getStatus() == st)
-//                materialRequest = mr;
-//        }
-//        return materialRequest;
-//    }
+    //Accept Request by site manager
+    @RequestMapping(method=RequestMethod.PUT, value="/MgrAcceptRequestStatus/{id}")
+    public List<MaterialRequest> acceptRequestStat(@PathVariable("id") int rid){
 
-
-    @RequestMapping(method = RequestMethod.GET , value = "/getallApproved" , produces = MediaType.APPLICATION_JSON_VALUE)
-    public ArrayList<MaterialRequest> getApprovedRequests(){
-
-        return materialRequestRepo.findApprovedRequests();
+        materialRequestRepo.acceptRequestStatusBYsitemgr(rid);
+        return materialRequestRepo.findAll();
     }
+
+    //reject Request by site manager
+    @RequestMapping(method=RequestMethod.PUT, value="/MgrRejectRequestStatus/{id}")
+    public List<MaterialRequest> rejectRequestStat(@PathVariable("id") int rid){
+
+        materialRequestRepo.rejectRequestStatusBYsitemgr(rid);
+        return materialRequestRepo.findAll();
+    }
+
+
+    //Accept Request by proc staff
+    @RequestMapping(method=RequestMethod.PUT, value="/ProcAcceptRequestStatus/{id}")
+    public List<MaterialRequest> acceptRequestStatproc(@PathVariable("id") int rid){
+
+        materialRequestRepo.acceptRequestStatusBYproc(rid);
+        return materialRequestRepo.findAll();
+    }
+
+    //reject Request by proc staff
+    @RequestMapping(method=RequestMethod.PUT, value="/ProcRejectRequestStatus/{id}")
+    public List<MaterialRequest> rejectRequestStatproc(@PathVariable("id") int rid){
+
+        materialRequestRepo.rejectRequestStatusBYproc(rid);
+        return materialRequestRepo.findAll();
+    }
+
+
+
 }

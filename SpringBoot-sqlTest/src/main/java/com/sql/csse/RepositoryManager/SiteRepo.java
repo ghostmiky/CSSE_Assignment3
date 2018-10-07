@@ -15,4 +15,12 @@ public interface SiteRepo extends JpaRepository<Site,Integer> {
     @Query(value = "UPDATE sites s SET s.address = :address ,s.site_name=:sitename, s.current_capacity=:currentcap, s.storage_capacity=:storagecap, s.manager_id=:managerid WHERE s.siteid = :siteID", nativeQuery = true)
     void updateSite(@Param("siteID") int siteID, @Param("address") String address, @Param("sitename") String sitename, @Param("currentcap") float currentcap, @Param("storagecap") float storagecap, @Param("managerid") String managerid);
 
+    @Modifying
+    @Transactional
+    @Query(value = "UPDATE sites s SET s.manager_id=:managerid WHERE s.siteid = :siteID", nativeQuery = true)
+    void addManager(@Param("siteID") int siteID, @Param("managerid") String managerid);
+
+
+
+
 }
